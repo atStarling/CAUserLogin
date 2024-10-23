@@ -66,6 +66,19 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
     }
 
     @Override
+    public void setCurrentUser(String name) {
+
+    }
+
+    /**
+     * @return
+     */
+    @Override
+    public String getCurrentUser() {
+        return "";
+    }
+
+    @Override
     public boolean existsByName(String username) {
         final OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
